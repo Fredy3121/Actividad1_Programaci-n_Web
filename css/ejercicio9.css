@@ -1,0 +1,130 @@
+/* 
+1. VARIABLES CSS (custom properties)
+-proposito; centralizar colores, fuentes y tamaños para facilitar mantenimiento.
+Beneficios: cambios globales desde un solo lugar
+*/
+:root{
+    --color-primario: #927dc1; 
+    --color-secundario: #4CC9F0;
+    --color-fondo:#abafb3;
+    --color-texto:#2B2D42;
+    --color-borde:#e9ecef;
+}
+
+/* Reser basico
+proposito: eliminar margenes y paddings predeterminados del navegador.
+inportancia: evita inconsistemcia entre navegadores
+*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos generales
+tpiografia: inter es una fuente moderna y legible.
+fondo: color claro para contraste con el formulario.
+*/
+body{
+    font-family:'Inter', sans-serif;
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    line-height: 1.6; /*mejora la legibilidad en textos*/
+    padding: 40px 20px; /*espaciado externo */
+}
+
+/* CONTENEDOR PRINCIPAL 
+max-width: limita el ancho en pantallas grandes.
+magin: 0 auto; centra el contenedor horizontalmente.
+box-shadow:efecto de elevacion sutil
+*/
+.contenedor-formulario{
+    max-width: 600px;
+    margin: 0 auto;
+    background: white;
+    padding: 40px;
+    border-radius: 12px; /*bordes redondeados*/
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+} 
+
+/* ESTILOS DE TIPOGRAFIA
+jerarquia visual : h1 > subtitulos > labels > inputs.
+font weigth. negritas para titulos y labels.
+*/
+h1  {
+    font-size: 28px;
+    color: var(--color-primario);
+    margin-bottom: 8px;
+}
+
+.subtitulo{
+    color:gray;
+    margin-bottom: 30px;
+}
+
+/* GRUPOS DE FORMULARIO 
+margin-button: espaciado vertical entre grupos.
+display: block en labels para ocupar la linea.
+*/
+.grupo-formulario{
+    margin-bottom: 20px;
+}
+
+label{
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500; /*semi negritas*/
+    font-size: 14px;
+}
+
+/* INPUTS Y TEXTAREA
+transition: efecto suave al hacer focus
+focus-state: feedback visual al interactuar
+*/
+input, textarea{
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid var(--color-borde);
+    border-radius: 8px;
+    transition: all 0.3s; /* animacion suave */
+}
+
+input:focus, textarea:focus{
+    border-color: var(--color-secundario);
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(76, 201  , 240, 0.2);
+}
+
+/*
+8. DISPOSICION EN COLUMNAS (GRUPO DOBLE)
+grid-template-columns: divide en 2 columnas iguales.
+gap: espacio entre columnas.
+*/
+.grupo-doble{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap:20px;
+}
+
+/* BOTON DE ENVÍO 
+cursor: pointer; cambia el cursor al pasar sobre el boton.
+flexbox: centra texto + ícono.
+hover-state: efecto al interactuar
+*/
+.boton-enviar{
+    background-color: var(--color-primario);
+    color: rgb(243, 242, 242);
+    border: none;
+    padding: 14px 24px;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: backgroung 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.boton-enviar:hover{
+    background-color: #2a0880;
+}
