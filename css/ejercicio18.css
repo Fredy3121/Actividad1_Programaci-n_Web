@@ -1,0 +1,22 @@
+#lista {
+    list-style-type: none;
+    padding: 0;
+}
+
+.elemento {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+    background-color: #f0f0f0;
+    margin-bottom: 5px;
+    border-radius: 4px;
+}
+
+.contenedor-tareas{
+    max-width: 600px;
+    margin: 0 auto;
+    background: rgb(219, 212, 212);
+    padding: 40px;
+    border-radius: 12px; /*bordes redondeados*/
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+} 

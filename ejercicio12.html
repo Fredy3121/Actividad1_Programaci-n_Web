@@ -3,30 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Conversor de grados celcius a fahrenhein</title>
-    <link rel="stylesheet" href="css/ejercicio10.css">
-    <script src="js/ejercicio10.js" defer></script>
+    <title>Conversion de pesos a dolares</title>
+    <link rel="stylesheet" href="css/ejercicio12.css">
+    <script src="js/ejercicio12.js" defer></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="contenedor-conversor">
-        <h1>Conversor de temperatura</h1>
+        <h1>Conversor de pesos a dolares</h1>
         <form class="conversion">
-            <div class="formulario-conversor">
-                <label for="grados">Temperatura en celcius </label>
-                <input type="number" id="numero" placeholder="Ej.25" required>
+            <div class="formulario-conversion">
+                <label for="pesos">Pesos mexicanos</label>
+                <input type="number" id="pesos" placeholder="Ej.500">
             </div>
             <button type="button" id="boton-convertir" class="boton-convertir">
-                Cinvertir <span>-</span>
+                Convertir
             </button>
             <div class="formulario-conversor">
-                <label for="resultado"> Resultado en Fahrenhein</label> 
-                <input type="text" id="resultado" readonly placeholder="esperando conversion">
+                <label for="resultado-dolares">Cantidad en dolares</label>
+                <input type="text" id="dolares" readonly placeholder="Esperando conversion">
             </div>
             <div>
                 <h3>Regresar al indice</h3>
                 <a href="index.html"> Indice</a>
             </div>
+
         </form>
     </div>
 </body>

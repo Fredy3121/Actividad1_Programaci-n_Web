@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family:'Inter', sans-serif;
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    line-height: 1.6; /*mejora la legibilidad en textos*/
+    padding: 40px 20px; /*espaciado externo */
+}
+
+.contenedor-tareas{
+    max-width: 600px;
+    margin: 0 auto;
+    background: rgb(219, 212, 212);
+    padding: 40px;
+    border-radius: 12px; /*bordes redondeados*/
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+} 
+
+h1  {
+    font-size: 28px;
+    color:rgb(7, 1, 17);
+    margin-bottom: 8px;
+}
+
+.boton-calcular{
+    background-color: #23183c;
+    color: rgb(250, 249, 249);
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: backgroung 0.3s;
+    /*display: flex;*/
+    justify-content: center;
+    align-items: center; 
+}
+
+.boton-calcular:hover{
+    background-color: #e3c758;
+}
+
+.formulario-calculador{
+    margin-bottom: 20px;
+}

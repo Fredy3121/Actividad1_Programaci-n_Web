@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 17 - Gestión de Tareas</title>
+    <link rel="stylesheet" href="css/ejercicio17.css">
+    
+    <!-- Librería SweetAlert2 para alertas -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    
+    <script src="js/ejercicio17.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="contenedor-tareas">
+        <h1>Gestor de Tareas</h1>
+
+        <form class="calculador" id="formulario-tareas">
+            <div class="formulario-calculador">
+                <label for="input-tarea">Nueva Tarea:</label>
+                <input type="text" id="input-tarea" placeholder="Ej. Estudiar JavaScript">
+            </div>
+
+            <button type="button" id="btn-agregar" class="boton-calcular">
+                Agregar Tarea
+            </button>
+
+            <div class="formulario-calculador">
+                <label>Tareas pendientes:</label>
+                <ul id="lista-tareas" style="list-style: none; padding: 0;"></ul>
+            </div>
+
+            <div>
+                <h3>Regresar al índice</h3>
+                <a href="index.html">Índice</a>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

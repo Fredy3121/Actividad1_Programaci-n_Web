@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcular mayor, menor y promedio de un arreglo</title>
+    <link rel="stylesheet" href="css/ejercicio14.css">
+    <script src="js/ejercicio14.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="contenedor-calculador">
+        <h1>Calcular mayor, menor y promedio</h1>
+        <form class="calculador">
+            <div class="formulario-calculador">
+                <label for="arreglo">Ingese numeros separados por comas</label>
+                <input type="text" id="arreglo" placeholder="Ej.10,20,30...">
+            </div>
+            <button type="button" id="boton-calcular" class="boton-calcular">
+                Calcular
+            </button>
+            <div class="formulario-calculador">
+                <label for="resultado-mayor">Numero mayor: </label>
+                <input type="text" id="resultado-mayor" readonly placeholder="Esperando mayor"><br>
+                
+                <label for="resultado-menor">Numero menor</label>
+                <input type="text" id="resultado-menor" readonly placeholder="esperando menor"><br>
+
+                <label for="resultado-promedio">Numero promedio</label>
+                <input type="text" id="resultado-promedio" readonly placeholder="esperando promedio"><br>
+            </div>
+            <div>
+                <h3>Regresar al indice</h3>
+                <a href="index.html"> Indice</a>
+            </div>
+
+        </form>
+    </div>
+</body>
+</html>

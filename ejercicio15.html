@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 15 - Registro de Estudiantes</title>
+    <link rel="stylesheet" href="css/ejercicio15.css">
+    <script src="js/ejercicio15.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="contenedor-verificador">
+        <h1>Control de Calificaciones</h1>
+        
+        <form class="calculador">
+            <div class="formulario-calculador">
+                <label for="nombre">Nombre del estudiante:</label>
+                <input type="text" id="nombre" placeholder="Ej. Juan">
+
+                <label for="calificacion">Calificación:</label>
+                <input type="number" id="calificacion" placeholder="Ej. 85" min="0" max="100">
+            </div>
+
+            <button type="button" id="boton-agregar" class="boton-calcular">
+                Agregar estudiante
+            </button><br>
+            <button type="button" id="boton-calcular" class="boton-calcular">
+                Calcular
+            </button>
+
+            <!-- Resultados -->
+            <div class="formulario-calculador">
+                <label for="resultado-promedio">Calificación promedio:</label>
+                <input type="text" id="resultado-promedio" readonly placeholder="Esperando cálculo..."><br>
+
+                <label for="resultado-mayor">Estudiante con mayor calificación:</label>
+                <input type="text" id="resultado-mayor" readonly placeholder="Esperando cálculo..."><br>
+
+                <label for="resultado-menor">Estudiante con menor calificación:</label>
+                <input type="text" id="resultado-menor" readonly placeholder="Esperando cálculo..."><br>
+            </div>
+
+            <div>
+                <h3>Regresar al índice</h3>
+                <a href="index.html">Índice</a>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
